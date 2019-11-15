@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mi aplicacion con socket</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1>Votaciones de color</h1>
+    <h2>¿cual es tu color favorito?</h2>
+    <div id="messages"></div>
+    <br>
+    <form onsubmit="return addMessage(this)" id="formulario">
+        <input type="radio" name="input_radio" id="amarillo" value="Amarillo">Amarillo
+        <input type="radio" name="input_radio" id="verde" value="Verde">Verde
+        <input type="radio" name="input_radio" id="azul" value="Azul">Azul
+        <input type="radio" name="input_radio" id="negro" value="Negro">Negro
+        <input type="submit" id="btn_radio" value="Enviar">
+    </form>
+    <br>
+    <a><strong>amarillo:</strong> <a id="ama">0</a> </a><a>votos &nbsp;&nbsp;&nbsp;</a>
+    <a><strong>verde:</strong> <a id="ver">0</a> </a><a>votos &nbsp;&nbsp;&nbsp;</a>
+    <a><strong>azul:</strong> <a id="azu">0</a> </a><a>votos &nbsp;&nbsp;&nbsp;</a>
+    <a><strong>negro:</strong> <a id="neg">0</a> </a><a>votos</a>
+</body>
+</html>
